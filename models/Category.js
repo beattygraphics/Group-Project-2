@@ -19,7 +19,10 @@ Category.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
-            foreignKey: true,
+            references: {
+                model: 'user',
+                key: 'id',
+            }
         },
     },
     {

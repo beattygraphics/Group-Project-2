@@ -14,12 +14,18 @@ CardCategory.init(
         card_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            foreignKey: true,
+            references: {
+                model: 'card',
+                key: 'id',
+            }
         },
         category_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            foreignKey: true,
+            references: {
+                model: 'category',
+                key: 'id',
+            }
         },
     },
     {
