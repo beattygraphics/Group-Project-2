@@ -11,10 +11,15 @@ Category.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        category_name: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
             primaryKey: false,
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            foreignKey: true,
         },
     },
     {

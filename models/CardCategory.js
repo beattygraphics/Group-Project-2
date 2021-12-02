@@ -21,11 +21,6 @@ CardCategory.init(
             allowNull: false,
             foreignKey: true,
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            foreignKey: true,
-        },
     },
     {
         sequelize,
