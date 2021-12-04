@@ -1,0 +1,13 @@
+
+
+body {
+  background-image: url(../assets/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center -200px;
+  background-size: cover;
+  /* background-color: hsl(225, 100%, 94%); */
+}
+
+.arrow {
+  color: grey;
+}
