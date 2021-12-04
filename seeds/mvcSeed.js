@@ -2,29 +2,25 @@ const { mcvCards } = require('../server');
 
 const mvcCardData = [
   {
-    card_ID: 'MVC Question',
-    question: '',
-    answer: '',
-    question_id: 1,
+    id: 'MVC Question',
+    question: 'What is one way a website can store data in a users browser?',
+    answer: 'Cookies'
   },
   {
-    card_ID: 'MVC Question',
+    id: 'MVC Question',
     question: '',
-    answer: '',
-    question_id: 2,
+    answer: ''
   },
   {
-    card_ID: 'MVC Question',
+    id: 'MVC Question',
     question: '',
-    answer: '',
-    question_id: 3,
+    answer: ''
   },
   {
-    card_ID: 'MVC Question',
+    id: 'MVC Question',
     question: '',
-    answer: '',
-    question_id: 4,
-  },
+    answer: ''
+  }
 ];
 
 const seedMvcCards = () => Cards.bulkCreate(mvcCardData);
