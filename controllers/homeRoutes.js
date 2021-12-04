@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', async (req, res) => {
-    res.render('homepage', { posts: cleanedPosts });
+    res.render('homepage');
 });
 
 router.get('/login', async (req, res) => {
