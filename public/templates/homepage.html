@@ -11,7 +11,7 @@
   <title>Flasher</title>
 </head>
 
-<body class="h-screen">
+<body class="h-screen flex flex-col">
   <!-- NAVBAR -->
   <nav class="bg-white border-gray-200 px- bg-white border-gray-200 px-2 sm:px-4 py-6 rounded dark:bg-gray-800">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
@@ -44,9 +44,9 @@
   </nav>
   <section class="flex flex-col items-center">
   <!-- MAIN GRID COLUMN CONTAINER -->
-    <div class="container mx-auto lg:grid sm:block lg:grid-cols-12 md:grid-cols-8 gap-4 py-10 px-4 ">
+    <div class="container mx-auto lg:grid sm:block lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-1 gap-4 py-10 px-4 ">
       <!-- CATEGORY COLUMN 1 OF 3 -->
-      <div class="lg:col-span-3 ">
+      <div class="lg:col-span-3 sm:hidden md:block">
         <div class="bg-white rounded-lg border border-gray-200 shadow-md text-sm font-medium dark:bg-gray-700 dark:border-gray-600 dark:text-white">
           <h2 class="text-2xl text-center border-b p-2">Categories</h2>
           <button type="button" class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
@@ -112,7 +112,7 @@
 
         <div class="flex justify-around mt-6">
           <i class="arrow fas fa-angle-left fa-4x"></i>
-          <button type="button" class="flip-btn text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Flip Card</button>
+          <button type="button" class=" flip-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Flip Card</button>
           <i class="arrow fas fa-angle-right fa-4x"></i>
         </div>
       </div>
@@ -130,12 +130,10 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto text-center">
-      <footer>
-        <h1>Dreamteam y'all</h1>
-      </footer>
-    </div>
 </section>
+<footer class="text-center">
+  <h1>Dreamteam y'all</h1>
+</footer>
 <script src="../js/animation.js"></script>
 </body>
 </html>
