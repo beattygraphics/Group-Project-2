@@ -7,6 +7,6 @@ const userRoutes = require('./userRoutes');
 router.use('/categories', categoriesRoutes);
 router.use('/card', cardRoutes);
 router.use('/favorite', favoriteRoutes);
-router.use('/user', userRoutes);
+router.use('/users', userRoutes);
 
 module.exports = router;
