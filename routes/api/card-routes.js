@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
   // find all cards by category
   try {
     const categoryData = await Category.findAll({include: [{model: Card}]});
-    const categoryMap = categoryMap.map((category) => category.get({ plain: true }));
-    res.status(200).json(categoryData)
+    const categoryMap = categoryData.map((category) => category.get({ plain: true }));
+    res.status(200).json(categoryMap)
   } catch (err) {
     res.status(500).json(err);
   }
