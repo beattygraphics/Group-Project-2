@@ -1,1 +1,3 @@
-// build out the db
+DROP DATABASE IF EXISTS flasher_db;
+
+CREATE DATABASE flasher_db;
