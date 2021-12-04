@@ -1,38 +1,33 @@
-const { cssCards } = require('../server');
+const { Sql } = require('../server');
 
-const cssCardData = [
+const sqlCardData = [
   {
-    card_ID: 'CSS Question',
-    question: 'What is the full name for CSS?',
-    answer: 'Cascading Style Sheets',
-    question_id: 1,
+    id: 'SQL Question',
+    question: 'What is a statement that retrieves data from the database?',
+    answer: 'A Select Statement'
   },
   {
-    card_ID: 'CSS Question',
-    question: 'What is CSS used for?',
-    answer: 'Its the code that defines the visual presentation of a webpage',
-    question_id: 2,
+    id: 'SQL Question',
+    question: 'What 2 clauses are mandatory in a Select statement?',
+    answer: 'SELECT and FROM'
   },
   {
-    card_ID: 'CSS Question',
-    question: 'What CSS syntax defines which part of an element should be styled (example: color, size, position)?',
-    answer: 'Property',
-    question_id: 3,
+    id: 'SQL Question',
+    question: 'What Clause acts as a filter in a select statement and specifies the return as either true or false?',
+    answer: 'A WHERE Clause'
   },
   {
-    card_ID: 'CSS Question',
-    question: 'What allows you to add style with CSS?',
-    answer: 'Style tags',
-    question_id: 4,
+    id: 'SQL Question',
+    question: 'How can you show all columns of a table names MyTable?',
+    answer: 'Select * FROM MyTable'
   },
   {
-    card_ID: 'CSS Question',
+    id: 'SQL Question',
     question: 'What is the HTML element that you use to apply a style tag to?',
-    answer: 'CSS Selector',
-    question_id: 4,
+    answer: 'CSS Selector'
   },
 ];
 
-const seedCssCards = () => Cards.bulkCreate(cssCardData);
+const seedSqlCards = () => Cards.bulkCreate(sqlCardData);
 
-module.exports = seedCssCards;
+module.exports = seedSqlCards;

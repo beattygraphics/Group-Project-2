@@ -11,3 +11,59 @@ body {
 .arrow {
   color: grey;
 }
+
+.card-container {
+  border-radius: 10px;
+  perspective: 1400px;
+}
+.card {
+  position: relative;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+}
+.front, .back {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.front {
+  color: #000;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  color: #000;
+  background: #fff;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.front > h2 {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+.star {
+  color: rgb(80, 80, 80);
+}
+
+strong {
+  padding: 0 10%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
