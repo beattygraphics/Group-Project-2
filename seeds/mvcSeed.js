@@ -1,4 +1,4 @@
-const { mcvCards } = require('../server');
+const { Mvc } = require('../server');
 
 const mvcCardData = [
   {

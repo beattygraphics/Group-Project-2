@@ -23,8 +23,8 @@ const sqlCardData = [
   },
   {
     id: 'SQL Question',
-    question: 'What is the HTML element that you use to apply a style tag to?',
-    answer: 'CSS Selector'
+    question: '',
+    answer: ''
   },
 ];
 
