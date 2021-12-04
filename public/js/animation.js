@@ -11,8 +11,9 @@ function favoriteCard() {
     anime({
       targets: star,
       scale: [{value:1}, {value:1.2},{value:1, delay: 100} ],
+          rotateZ: '360',
           easing: "easeInOutSine",
-          duration: 200,
+          duration: 400,
     });
     star.innerHTML = `<i class="fas fa-star fa-2x"></i>`
     star.style.color = "#F8DB26"
