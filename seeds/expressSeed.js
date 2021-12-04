@@ -1,4 +1,4 @@
-const { Express } = require('../server');
+const { Card } = require('../models');
 
 const expressCardData = [
   {
@@ -23,6 +23,6 @@ const expressCardData = [
   },
 ];
 
-const seedExpressCards = () => Cards.bulkCreate(expressCardData);
+const seedExpressCards = () => Card.bulkCreate(expressCardData);
 
 module.exports = seedExpressCards;

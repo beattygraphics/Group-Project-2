@@ -4,6 +4,7 @@ const seedHtml = require('./htmlSeed');
 const seedMvc = require('./mvcSeed');
 const seedNode = require('./nodeSeed');
 const seedSql = require('./sqlSeed');
+const seedUser = require('./userSeed');
 
 
 const sequelize = require('../config/connection');
@@ -28,6 +29,9 @@ const seedAll = async () => {
 
   await seedSql();
   console.log('\n----- SQL SEEDED -----\n');
+
+  await seedUser();
+  console.log('\n----- USER SEEDED -----\n');
 
   process.exit(0);
 };

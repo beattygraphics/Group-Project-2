@@ -1,6 +1,6 @@
 const { Card } = require('../models');
 
-const cssCardData = [
+const jsCardData = [
   {
     question: 'What is the full name for CSS?',
     answer: 'Cascading Style Sheets'
@@ -23,6 +23,6 @@ const cssCardData = [
   },
 ];
 
-const seedCssCards = () => Card.bulkCreate(cssCardData);
+const seedJsCards = () => Card.bulkCreate(jsCardData);
 
-module.exports = seedCssCards;
+module.exports = seedCards;
