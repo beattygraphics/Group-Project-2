@@ -3,7 +3,7 @@ const { Card, Favorites, Category } = require('../../models');
 
 // The `/api/cards` endpoint
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   // find all cards by category
   try {
     const categoryData = await Category.findAll({include: [{model: Card}]});
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
   }
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find cards by its Favorites value
   try {
     const categoryData = await Favorites.findByPk(req.params.id, {include: [{model: Card}]});
@@ -28,6 +28,13 @@ router.get('/:id', (req, res) => {
 
 });
 
-  
+router.post('/', async (req, res) => {
+  try {
+    const cardData = await Card.create(req.body);
+    res.status(200).json(cardData)
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
