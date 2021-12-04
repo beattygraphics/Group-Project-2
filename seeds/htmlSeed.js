@@ -1,29 +1,25 @@
-const { htmlCards } = require('../server');
+const { Html } = require('../server');
 
 const htmlCardData = [
   {
-    card_ID: 'HTML Question',
+    id: 'HTML Question',
     question: 'What data is contained in the head tag?',
-    answer: 'meta data invisible to users',
-    question_id: 1,
+    answer: 'meta data invisible to users'
   },
   {
-    card_ID: 'HTML Question',
+    id: 'HTML Question',
     question: 'This HTML tag breaks up logical groupings of information?',
-    answer: 'section tags',
-    question_id: 2,
+    answer: 'section tags'
   },
   {
-    card_ID: 'HTML Question',
+    id: 'HTML Question',
     question: 'What element is a complement for the header element and represents the bottom of a content area?',
-    answer: 'footer',
-    question_id: 3,
+    answer: 'footer'
   },
   {
-    card_ID: 'HTML Question',
+    id: 'HTML Question',
     question: '',
-    answer: '',
-    question_id: 4,
+    answer: ''
   },
 ];
 

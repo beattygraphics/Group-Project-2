@@ -1,29 +1,25 @@
-const { expressCards } = require('../server');
+const { Express } = require('../server');
 
 const expressCardData = [
   {
-    card_ID: 'Express Question',
+    id: 'Express Question',
     question: '',
-    answer: '',
-    question_id: 1,
+    answer: ''
   },
   {
-    card_ID: 'Express Question',
+    id: 'Express Question',
     question: '',
-    answer: '',
-    question_id: 2,
+    answer: ''
   },
   {
-    card_ID: 'Express Question',
+    id: 'Express Question',
     question: '',
-    answer: '',
-    question_id: 3,
+    answer: ''
   },
   {
-    card_ID: 'Express Question',
+    id: 'Express Question',
     question: '',
-    answer: '',
-    question_id: 4,
+    answer: ''
   },
 ];
 
