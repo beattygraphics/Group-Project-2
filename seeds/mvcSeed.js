@@ -6,16 +6,16 @@ const mvcCardData = [
     answer: 'Cookies'
   },
   {
-    question: '',
-    answer: ''
+    question: 'Handlebars is what kind of engine?',
+    answer: 'a Templating engine'
   },
   {
-    question: '',
-    answer: ''
+    question: 'How do you drop a value in your contect into your temnplate?',
+    answer: 'double curly braces'
   },
   {
-    question: '',
-    answer: ''
+    question: 'What is the difference between a scession and a cookie?',
+    answer: 'cookies are stores on the Server-sie, and Cookies are storesd in the browser'
   }
 ];
 

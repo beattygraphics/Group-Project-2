@@ -1,48 +1,38 @@
-const { CardCategory } = require('../models');
+const { Category } = require('../models');
 
-const cardCategoryData = [
+const categoryData = [
   {
-    card_id: ,
-    category_id:
+    name: 'CSS',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'EXPRESS',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'HTML',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'MVC',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'NODE',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'SQL',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'API',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'JAVASCRIPT',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'ORM',
   },
   {
-    card_id: ,
-    category_id:
+    name: 'OOP',
   },
 ];
 
-const seedCardCategory = () => CardCategory.bulkCreate(cardCategoryData);
+const seedCategory = () => Category.bulkCreate(categoryData);
 
-module.exports = seedCardCategory;
+module.exports = seedCategory;
