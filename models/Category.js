@@ -16,6 +16,11 @@ Category.init(
             allowNull: false,
             primaryKey: false,
         },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            primaryKey: false,
+        },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
