@@ -6,7 +6,6 @@ var star = document.querySelector(".star")
 var favorited = false;
 
 function favoriteCard() {
-  event.preventDefault()
   if(star.innerHTML = `<i class="far fa-star fa-2x"></i>`) {
     anime({
       targets: star,
@@ -17,8 +16,6 @@ function favoriteCard() {
     });
     star.innerHTML = `<i class="fas fa-star fa-2x"></i>`
     star.style.color = "#F8DB26"
-  } else {
-    star.innerHTML = `<i class="far fa-star fa-2x"></i>`
   }
 }
 

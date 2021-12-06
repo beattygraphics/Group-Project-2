@@ -1,9 +1,9 @@
 
 
-body {
-  background-image: url(../assets/images/pattern-background-desktop.svg);
+.homepage {
+  background-image: url(../assets/images/Meteor.svg);
   background-repeat: no-repeat;
-  background-position: center -200px;
+  background-position: center;
   background-size: cover;
   /* background-color: hsl(225, 100%, 94%); */
 }
@@ -66,4 +66,8 @@ strong {
   display: flex;
   align-items: center;
   text-align: left;
+}
+
+.overview-content {
+  max-height: 485px;
 }
