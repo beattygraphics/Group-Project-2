@@ -14,12 +14,16 @@ const apiCardData = [
     answer: 'Web API can be consumed by any client which supports HTML verbs such as GET, PUT, DELETE, and POST'
   },
   {
-    question: 'What is API testing?',
-    answer: 'Style tags'
+    question: 'What does REST stand for?',
+    answer: 'Representational State Transfer'
   },
   {
     question: 'Name an API testing app?',
     answer: 'Insomnia, Postman, ReadyAPI, JMeter, REST_Assured'
+  },
+  {
+    question: 'What are the most popular ways to represent a resource in REST?',
+    answer: 'XML and JSON are the most popular representations of resources in REST'
   },
 ];
 

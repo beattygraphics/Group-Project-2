@@ -21,10 +21,6 @@ const nodeCardData = [
     question: 'What is Node.js?',
     answer: 'a Javascript Runtime'
   },
-  {
-    question: '',
-    answer: ''
-  },
 ];
 
 const seedNodeCards = () => Card.bulkCreate(nodeCardData);

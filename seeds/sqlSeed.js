@@ -17,10 +17,6 @@ const sqlCardData = [
     question: 'How can you show all columns of a table names MyTable?',
     answer: 'Select * FROM MyTable'
   },
-  {
-    question: '',
-    answer: ''
-  },
 ];
 
 const seedSqlCards = () => Card.bulkCreate(sqlCardData);
