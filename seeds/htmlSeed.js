@@ -17,6 +17,10 @@ const htmlCardData = [
     question: 'what tag indicates the beginning of a new paragraph?',
     answer: '<p></p>'
   },
+  {
+    question: 'Name 5 Examples of HTML element Tags',
+    answer: 'head, body, img, src, p, a'
+  },
 ];
 
 const seedHtmlCards = () => Card.bulkCreate(htmlCardData);

@@ -25,4 +25,4 @@ const jsCardData = [
 
 const seedJsCards = () => Card.bulkCreate(jsCardData);
 
-module.exports = seedCards;
+module.exports = seedJsCards;

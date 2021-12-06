@@ -5,6 +5,12 @@ const seedMvc = require('./mvcSeed');
 const seedNode = require('./nodeSeed');
 const seedSql = require('./sqlSeed');
 const seedUser = require('./userSeed');
+const seedApi = require('./apiSeed');
+const seedCardCategory = require('./cardCategorySeed');
+const seedCategory = require('./categorySeed');
+const seedJavascript = require('./javascriptSeed');
+const seedOop = require('./oopSeed');
+const seedOrm = require('./ormSeed');
 
 
 const sequelize = require('../config/connection');
@@ -12,6 +18,7 @@ const sequelize = require('../config/connection');
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
+
   await seedCss();
   console.log('\n-----CSS SEEDED -----\n');
 
@@ -32,6 +39,24 @@ const seedAll = async () => {
 
   await seedUser();
   console.log('\n----- USER SEEDED -----\n');
+
+  await seedApi();
+  console.log('\n----- API SEEDED -----\n');
+
+  await seedCardCategory();
+  console.log('\n----- CARD CATEGORY SEEDED -----\n');
+
+  await seedCategory();
+  console.log('\n----- CATEGORY SEEDED -----\n');
+
+  await seedJavascript();
+  console.log('\n----- JAVASCRIPT SEEDED -----\n');
+
+  await seedOop();
+  console.log('\n----- OOP SEEDED -----\n');
+
+  await seedOrm();
+  console.log('\n----- ORM SEEDED -----\n');
 
   process.exit(0);
 };
