@@ -1,11 +1,11 @@
-<div class="flex flex-col items-center">
+<div class="homepage flex flex-col flex-grow justify-center items-center">
     <!-- MAIN GRID COLUMN CONTAINER -->
-    <div class="container mx-auto lg:grid sm:block lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-1 gap-4 py-10 px-4 ">
+    <div class="container rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
         <!-- CATEGORY COLUMN 1 OF 3 -->
-        <div class="lg:col-span-3 sm:hidden md:block">
+        <div class="hidden md:grid md:col-span-4 lg:col-span-3">
             <div
-                class="bg-white rounded-lg border border-gray-200 shadow-md text-sm font-medium dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                <h2 class="text-2xl text-center border-b p-2">Categories</h2>
+                class="bg-white rounded border border-gray-200 shadow-xl text-sm font-medium dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <h2 class="text-2xl text-center border-b p-4 font-medium">Categories</h2>
                 <button type="button"
                     class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
                     HTML/GIT/CSS
@@ -61,10 +61,11 @@
             </div>
         </div>
         <!-- FLASCARD COLUMN 2 OF 3-->
-        <div class="col-span-6 rounded">
+        <div class="md:col-span-8 lg:col-span-6 rounded">
+            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card 1 of 25</h3>
             <div class="card-container">
                 <div
-                    class="bg-white m-2 rounded h-96 flex justify-center items-center flex-col p-5 text-center shadow-md card">
+                    class="bg-white m-2 rounded h-96 flex justify-center items-center flex-col p-5 text-center shadow-xl card">
                     <div class="front">
                         <div class="star absolute top-2 right-2">
                             <i class="far fa-star fa-2x"></i>
@@ -77,18 +78,26 @@
                 </div>
             </div>
             <div class="flex justify-around mt-6">
-                <i class="arrow fas fa-angle-left fa-4x"></i>
+    
+                <button type="button" class="prev-card">
+                    <i class="arrow fas fa-angle-left fa-4x"></i>
+                </button>
                 <button type="button"
-                    class=" flip-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Flip
+                    class="flip-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Flip
                     Card</button>
-                <i class="arrow fas fa-angle-right fa-4x"></i>
+                <button type="button"
+                    class="md:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Categories</button>
+                <button type="button" class="next-card">
+                    <i class="arrow fas fa-angle-right fa-4x"></i>
+                </button>
             </div>
         </div>
         <!-- OVERVIEW COLUMN 3 OF 3 -->
-        <div class="lg:col-span-3">
-            <div class="bg-white rounded shadow-md p-2">
-                <h2 class="text-2xl text-center border-b p-2 font-700">Overview</h2>
-                <div class="p-4 overflow-scroll">
+        <div class="hidden max-h-96 lg:grid lg:col-span-3">
+            <div class="bg-white rounded shadow-xl p-2">
+                <h2 class="text-2xl text-center border-b p-2 font-medium">Overview</h2>
+                <div class="overview-content p-4 overflow-auto">
                     <p>At the heart of every website is **HTML**, or **Hypertext Markup Language**. As the standard
                         language used to build the structure of a webpage, HTML allows us to define elements like
                         paragraphs, images, links, forms, and more.

@@ -12,4 +12,8 @@ router.get('/register', async (req, res) => {
     res.render('registration');
 });
 
+router.get('/create', async (req, res) => {
+    res.render('createCard');
+});
+
 module.exports = router;
