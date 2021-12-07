@@ -31,7 +31,8 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const cardData = await Card.create(req.body);
-    res.status(200).json(cardData)
+    const card = cardData.get({ plain: true });
+    res.status(200).json(card)
   } catch (err) {
     res.status(500).json(err);
   }
