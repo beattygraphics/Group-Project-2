@@ -6,8 +6,8 @@ const seedNode = require('./nodeSeed');
 const seedSql = require('./sqlSeed');
 const seedUser = require('./userSeed');
 const seedApi = require('./apiSeed');
-const seedCardCategory = require('./cardCategorySeed');
 const seedCategory = require('./categorySeed');
+const seedCardCategory = require('./cardCategorySeed');
 const seedJavascript = require('./javascriptSeed');
 const seedOop = require('./oopSeed');
 const seedOrm = require('./ormSeed');
@@ -43,11 +43,11 @@ const seedAll = async () => {
   await seedApi();
   console.log('\n----- API SEEDED -----\n');
 
-  await seedCardCategory();
-  console.log('\n----- CARD CATEGORY SEEDED -----\n');
-
   await seedCategory();
   console.log('\n----- CATEGORY SEEDED -----\n');
+
+  await seedCardCategory();
+  console.log('\n----- CARD CATEGORY SEEDED -----\n');
 
   await seedJavascript();
   console.log('\n----- JAVASCRIPT SEEDED -----\n');
