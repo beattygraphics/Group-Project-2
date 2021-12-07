@@ -5,10 +5,8 @@ const router = require('express').Router();
 router.get('/', async (req, res) => {
     try {
         const categoryData = await Category.findAll()
-
-        const categories = ['jumba', 'humba', 'css', 'html']
-        // categoryData.map((category) => category.get({plain: true}));
-        
+        const categories = categoryData.map((category) => category.get({plain: true}));
+        console.log(categories)
         res.render('homepage', {
             categories
         });
@@ -30,12 +28,12 @@ router.get('/create', async (req, res) => {
     try {
         const categoryData = await Category.findAll()
 
-        const categories = ['jumba', 'humba', 'css', 'html']
-        // categoryData.map((category) => category.get({plain: true}));
+        const categories = categoryData.map((category) => category.get({plain: true}));
         
         res.render('createCard', {
             categories
         });
+        console.log(categories)
     } catch (err) {
         console.log(err)
         res.status(500).json(err);
