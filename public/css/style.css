@@ -71,3 +71,7 @@ strong {
 .overview-content {
   max-height: 485px;
 }
+
+#login-submit {
+  width: 100% !important;
+}
