@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-const categoryBtns = document.querySelectorAll(".category-btn");
-const nextCardBtn = document.querySelector("#next-card");
-const prevCardBtn = document.querySelector("#prev-card");
-=======
 const categoryBtns = document.querySelectorAll(".category-btn")
 const nextCardBtn = document.querySelector("#next-card")
 const prevCardBtn = document.querySelector("#prev-card")
 const logoutBtn = document.querySelector('#logout-button');
->>>>>>> ee49e54aba67745964a55d69ba14181e74249086
+
 
 let currentCategory = 1;
 let cardQuestions = [];

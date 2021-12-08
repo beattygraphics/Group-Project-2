@@ -63,7 +63,7 @@ router.post('/logout', (req, res) => {
             req.session.destroy(() => res.status(204).json("logged out").end());
         } else {
             res.status(204).json("couldn't log you out").end();
-        }
+        };
 });
 
 module.exports = router;
