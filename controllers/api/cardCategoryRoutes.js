@@ -20,7 +20,7 @@ router.get('/:id', async (req, res) => {
         }
       });
       const cardIdsFromCategory = cardFromCatData.map((card) => card.get({ plain: true }));
-      console.log(cardIdsFromCategory[1].card_id)
+      console.log(cardIdsFromCategory)
       res.status(200).json(cardIdsFromCategory)
       if (!cardIdsFromCategory) {
         res.status(404).json({message: 'Cannot find category with this ID'})

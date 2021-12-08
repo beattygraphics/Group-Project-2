@@ -6,7 +6,7 @@ const { Card, Favorites, Category } = require('../../models');
 router.get('/', async (req, res) => {
   // find all cards by category
   try {
-    const categoryData = await Category.findAll({include: [{model: Card}]});
+    const categoryData = await Card.findAll();
     const categoryMap = categoryData.map((category) => category.get({ plain: true }));
     res.status(200).json(categoryMap)
   } catch (err) {
