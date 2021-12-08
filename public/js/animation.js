@@ -34,6 +34,14 @@ function cardFlip() {
           }
         });
 }
+
+function nextCard() {
+
+}
+
+function previousCard() {
+  
+}
       
 
 

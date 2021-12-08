@@ -200,6 +200,7 @@ const cardCategoryData = [
   {
     card_id: 50,
     category_id: 10
+
   },
 ];
 

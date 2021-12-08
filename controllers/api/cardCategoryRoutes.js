@@ -11,4 +11,24 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.get('/:id', async (req, res) => {
+    // finds all cards from specific category id 
+    try {
+      const cardFromCatData = await CardCategory.findAll({ attributes: ['card_id'],
+        where: {
+          category_id: req.params.id
+        }
+      });
+      const cardIdsFromCategory = cardFromCatData.map((card) => card.get({ plain: true }));
+      console.log(cardIdsFromCategory[1].card_id)
+      res.status(200).json(cardIdsFromCategory)
+      if (!cardIdsFromCategory) {
+        res.status(404).json({message: 'Cannot find category with this ID'})
+      }
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  
+  });
+
 module.exports = router;
