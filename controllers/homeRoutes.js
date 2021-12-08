@@ -8,7 +8,8 @@ router.get('/', async (req, res) => {
         const categoryData = await Category.findAll()
         const categories = categoryData.map((category) => category.get({plain: true}));
         res.render('homepage', {
-            categories
+            categories,
+            logged_in: req.session.logged_in
         });
     } catch (err) {
         console.log(err)
@@ -17,11 +18,11 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/login', async (req, res) => {
-    res.render('login');
+    res.render('login', { logged_in: req.session.logged_in });
 });
 
 router.get('/register', async (req, res) => {
-    res.render('registration');
+    res.render('registration', { logged_in: req.session.logged_in });
 });
 
 router.get('/create', withAuth, async (req, res) => {
