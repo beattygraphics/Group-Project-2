@@ -1,8 +1,3 @@
-// const { Card } = require("../../models");
-
-console.log('hello world')
-
-
 const handleCreateCard = async (event) => {
     event.preventDefault();
 
@@ -11,7 +6,7 @@ const handleCreateCard = async (event) => {
     const answer = document.querySelector('#card-answer').value.trim();
     const category_id = document.querySelector('#create-category-select').value.trim();
 
-    if (email && password) {
+    if (question && answer && category_id) {
         // Send a POST request to the API endpoint
         const cardResponse = await fetch('/api/card/', {
             method: 'POST',
@@ -25,7 +20,7 @@ const handleCreateCard = async (event) => {
         });
 
         if (cardResponse.ok) {
-            const card = cardResponse.json();
+            const card = await cardResponse.json();
             const cardCatResponse = await fetch('/api/cardCategory/', {
                 method: 'POST',
                 body: JSON.stringify({
@@ -48,8 +43,8 @@ const handleCreateCard = async (event) => {
     }
 }
 
+const createSubmit = document.querySelector('#create-card-submit')
+if (createSubmit) createSubmit.addEventListener('click', handleCreateCard);
 
-
-document
-    .querySelector('#create-card-form')
-    .addEventListener('submit', handleCreateCard);
+const createClear = document.querySelector('#create-card-clear');
+if (createClear) createClear.addEventListener('click', () => document.querySelector('#create-card-form').reset());

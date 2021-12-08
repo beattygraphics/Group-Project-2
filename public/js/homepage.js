@@ -1,6 +1,7 @@
 const categoryBtns = document.querySelectorAll(".category-btn")
 const nextCardBtn = document.querySelector("#next-card")
 const prevCardBtn = document.querySelector("#prev-card")
+const logoutBtn = document.querySelector('#logout-button');
 
 // console.log(categoryBtns)
 // console.log(nextCardBtn)
@@ -15,5 +16,22 @@ const getCardsFromCategory = ()=> {
     })
   }
 }
+
+const handleLogout = async (event) => {
+  event.preventDefault();
+
+  const response = await fetch('/api/users/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert(response.statusText);
+  }
+};
+
+logoutBtn.addEventListener('click', handleLogout);
 
 getCardsFromCategory()
