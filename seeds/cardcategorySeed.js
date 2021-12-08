@@ -4,7 +4,22 @@ const cardCategoryData = [
   {
     card_id: 1,
     category_id: 1
-  // },
+  },
+  {
+    card_id: 2,
+    category_id: 1
+  },
+  {
+    card_id: 3,
+    category_id: 1
+  },
+  {
+    card_id: 4,
+    category_id: 1
+  },
+  {
+    card_id: 5,
+    category_id: 1
   // {
   //   card_id: 2,
   //   category_id: 2

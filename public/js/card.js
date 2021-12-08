@@ -1,4 +1,7 @@
-const { Card } = require("../../models");
+// const { Card } = require("../../models");
+
+console.log('hello world')
+
 
 const handleCreateCard = async (event) => {
     event.preventDefault();
@@ -6,7 +9,7 @@ const handleCreateCard = async (event) => {
     // Collect values from the login form
     const question = document.querySelector('#card-question').value.trim();
     const answer = document.querySelector('#card-answer').value.trim();
-    const category_id = document.querySelector('#card-category').value.trim();
+    const category_id = document.querySelector('#create-category-select').value.trim();
 
     if (email && password) {
         // Send a POST request to the API endpoint
@@ -44,6 +47,8 @@ const handleCreateCard = async (event) => {
         }
     }
 }
+
+
 
 document
     .querySelector('#create-card-form')
