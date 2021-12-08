@@ -80,7 +80,7 @@
             </div>
             <div class="flex justify-around mt-6">
     
-                <button type="button" class="prev-card">
+                <button type="button" id="prev-card">
                     <i class="arrow fas fa-angle-left fa-4x"></i>
                 </button>
                 <button type="button"
@@ -89,7 +89,7 @@
                 <button type="button"
                     class="md:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Categories</button>
-                <button type="button" class="next-card">
+                <button type="button" id="next-card">
                     <i class="arrow fas fa-angle-right fa-4x"></i>
                 </button>
             </div>
@@ -98,7 +98,7 @@
         <div class="hidden max-h-96 lg:grid lg:col-span-3">
             <div class="bg-white rounded shadow-xl p-2">
                 <h2 class="text-2xl text-center border-b p-2 font-medium">Overview</h2>
-                {{!-- <div class="overview-content p-4 overflow-auto">
+                <div class="overview-content p-4 overflow-auto">
                     <p>At the heart of every website is **HTML**, or **Hypertext Markup Language**. As the standard
                         language used to build the structure of a webpage, HTML allows us to define elements like
                         paragraphs, images, links, forms, and more.
@@ -111,8 +111,8 @@
                         and style. You'll also be introduced to Git, a version control system that stores your code and
                         its history, as well as separate versions of the code. As the building blocks of web
                         development, these are essential skills and tools that you'll use throughout your career. </p>
-                </div> --}}
-                {{!-- {{>overview}} --}}
+                </div>
+                {{!-- {{categories[0].description}} --}}
             </div>
         </div>
     </div>

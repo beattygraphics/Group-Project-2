@@ -17,7 +17,7 @@ Category.init(
             primaryKey: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true,
             primaryKey: false,
         },
