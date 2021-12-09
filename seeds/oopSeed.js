@@ -14,15 +14,15 @@ const oopCardData = [
     answer: 'Pending, Fulfilled. Rejected'
   },
   {
-    question: 'What sre Constructors in JavaScript?',
+    question: 'What are Constructors in JavaScript?',
     answer: 'A function that creates an instance of a class'
   },
   {
-    question: 'Wjat is a class?',
+    question: 'What is a class?',
     answer: 'A template from which objects are created and In JavaScript, a class is a kind of a function'
   },
   {
-    question: '"this" in classes refers to the?',
+    question: '"this" in classes refers to?',
     answer: 'a new object'
   },
 ];
