@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { CardCategory } = require('../../models');
+const { Category, CardCategory, Card } = require('../../models');
 
 router.post('/', async (req, res) => {
     try {
@@ -12,23 +12,24 @@ router.post('/', async (req, res) => {
 })
 
 router.get('/:id', async (req, res) => {
-    // finds all cards from specific category id 
+    // finds all cards from specific category id
     try {
-      const cardFromCatData = await CardCategory.findAll({ attributes: ['card_id'],
-        where: {
-          category_id: req.params.id
-        }
+      const cardFromCatData = await Category.findByPk(req.params.id, {
+        include: [
+          { model: Card, through: CardCategory, as: 'cards_in_category' }
+        ]
       });
-      const cardIdsFromCategory = cardFromCatData.map((card) => card.get({ plain: true }));
-      console.log(cardIdsFromCategory)
-      res.status(200).json(cardIdsFromCategory)
-      if (!cardIdsFromCategory) {
+      const cardsFromCategory = cardFromCatData.get({ plain: true });
+      console.log(cardsFromCategory);
+      if (!cardsFromCategory) {
         res.status(404).json({message: 'Cannot find category with this ID'})
+        return;
       }
+      res.status(200).json(cardsFromCategory)
     } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
-  
   });
 
 module.exports = router;
