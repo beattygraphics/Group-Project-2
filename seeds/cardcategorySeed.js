@@ -175,48 +175,67 @@ const cardCategoryData = [
   },
   {
     card_id: 44,
-    category_id: 9
+    category_id: 8
   },
   {
     card_id: 45,
-    category_id: 9
+    category_id: 8
   },
   {
     card_id: 46,
-    category_id: 9
+    category_id: 8
   },
   {
     card_id: 47,
-    category_id: 9
+    category_id: 8
   },
   {
     card_id: 48,
-    category_id: 9
+    category_id: 8
   },
   {
     card_id: 49,
-    category_id: 10
+    category_id: 9
   },
   {
     card_id: 50,
-    category_id: 10
+    category_id: 9
   },
   {
     card_id: 51,
-    category_id: 10
+    category_id: 9
   },
   {
     card_id: 52,
-    category_id: 10
+    category_id: 9
   },
   {
     card_id: 53,
-    category_id: 10
+    category_id: 9
   },
   {
     card_id: 54,
     category_id: 10
-
+  },
+  {
+    card_id: 55,
+    category_id: 10
+  },
+  {
+    card_id: 56,
+    category_id: 10
+  },
+  {
+    card_id: 57,
+    category_id: 10
+  },
+  {
+    card_id: 58,
+    category_id: 10
+  },
+  {
+    card_id: 59,
+    category_id: 10
   },
 ];
 

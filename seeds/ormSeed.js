@@ -21,6 +21,26 @@ const ormCardData = [
     question: 'When doing a join, the number of columns in the new table is equal to what?',
     answer: 'the sum of the columns in the two tables'
   },
+  {
+    question: 'What does CRUD stand for?',
+    answer: 'Create, Read, Update, Delete'
+  },
+  {
+    question: 'How does password hashing work?',
+    answer: 'Hashing turns your password (or any other piece of data) into a short string of letters and/or numbers using an encryption algorithm.'
+  },
+  {
+    question: 'What is a Hook?',
+    answer: 'Hooks are functions that let you “hook into” React state and lifecycle features from function components.'
+  },
+  {
+    question: 'How many types of Javascript litterals are there?',
+    answer: 'There are four types of literals - string literals, number literals, boolean literals and null literals.'
+  },
+  {
+    question: 'What is ESLint used for?',
+    answer: 'ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.'
+  },
 ];
 
 const seedOrmCards = () => Card.bulkCreate(ormCardData);
