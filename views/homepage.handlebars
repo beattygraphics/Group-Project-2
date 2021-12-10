@@ -1,69 +1,19 @@
 <div class="background flex flex-col flex-grow justify-center items-center">
     <!-- MAIN GRID COLUMN CONTAINER -->
-    <div class="container rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
+    <div class="container flex justify-center rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
         <!-- CATEGORY COLUMN 1 OF 3 -->
-        <div class="hidden md:grid md:col-span-4 lg:col-span-3">
+        <div class="hidden md:grid md:col-span-4 lg:col-span-3 max-h-48">
             <div
                 class="bg-white rounded border border-gray-200 shadow-xl text-sm font-medium dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                 <h2 class="text-2xl text-center border-b p-4 font-medium">Categories</h2>
                 {{> categories}}
-                {{!-- <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    HTML/GIT/CSS
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Advanced CSS
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    JavaScript
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    WEB API's
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Third Party API's
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Server Side API's
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Node
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    OOP
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Express
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    SQL
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    ORM
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    MVC
-                </button>
-                <button type="button"
-                    class="text-left px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer dark:border-gray-600 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-                    Favorites
-                </button> --}}
             </div>
         </div>
         <!-- FLASCARD COLUMN 2 OF 3-->
         <div class="md:col-span-8 lg:col-span-6 rounded">
-            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card 1 of 25</h3>
+            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card 
+                <span id="card-number">1</span> of 
+                <span id="category-length">5</h3>
             <div class="card-container">
                 <div
                     class="bg-white m-2 rounded h-96 flex justify-center items-center flex-col p-5 text-center shadow-xl card">
@@ -71,10 +21,10 @@
                         <div class="star absolute top-2 right-2">
                             <i class="far fa-star fa-2x"></i>
                         </div>
-                        <p class="text-3xl">What is the GIT command for creating a new branch?</p>
+                        <p class="front-text text-3xl">What is the GIT command for creating a new branch?</p>
                     </div>
                     <div class="back">
-                        <p class="text-3xl">git checkout -b "branch name"</p>
+                        <p class="back-text text-3xl">git checkout -b "branch name"</p>
                     </div>
                 </div>
             </div>
@@ -95,11 +45,11 @@
             </div>
         </div>
         <!-- OVERVIEW COLUMN 3 OF 3 -->
-        <div class="hidden max-h-96 lg:grid lg:col-span-3">
+        <div class="hidden max-h-48 lg:grid lg:col-span-3">
             <div class="bg-white rounded shadow-xl p-2">
                 <h2 class="text-2xl text-center border-b p-2 font-medium">Overview</h2>
-                <div class="overview-content p-4 overflow-auto">
-                    <p>At the heart of every website is **HTML**, or **Hypertext Markup Language**. As the standard
+                <div class=" p-4 overflow-auto">
+                    <p class="overview-content">At the heart of every website is **HTML**, or **Hypertext Markup Language**. As the standard
                         language used to build the structure of a webpage, HTML allows us to define elements like
                         paragraphs, images, links, forms, and more.
 
