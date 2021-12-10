@@ -4,6 +4,9 @@ const prevCardBtn = document.querySelector("#prev-card")
 const logoutBtn = document.querySelector('#logout-button');
 
 const overviewContent = document.querySelector('.overview-content');
+const modalContent = document.querySelector('#modal-text');
+
+
 const cardFront = document.querySelector('.front-text');
 const cardBack = document.querySelector('.back-text');
 
@@ -46,7 +49,10 @@ async function fetchCategoryInfo (id) {
 // displays Category description 
 function setDescription(description) {
   overviewContent.innerHTML = description;
+  modalContent.innerHTML = description;
 }
+
+
 
 // displays card front & back content 
 function setCardContent(array, index) {

@@ -1,6 +1,7 @@
 <div class="background flex flex-col flex-grow justify-center items-center">
     <!-- MAIN GRID COLUMN CONTAINER -->
-    <div class="container flex justify-center rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
+    <div
+        class="container flex justify-center rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
         <!-- CATEGORY COLUMN 1 OF 3 -->
         <div class="hidden md:grid md:col-span-4 lg:col-span-3 max-h-48">
             <div
@@ -11,9 +12,10 @@
         </div>
         <!-- FLASCARD COLUMN 2 OF 3-->
         <div class="md:col-span-8 lg:col-span-6 rounded">
-            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card 
-                <span id="card-number">1</span> of 
-                <span id="category-length">5</h3>
+            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card
+                <span id="card-number">1</span> of
+                <span id="category-length">5
+            </h3>
             <div class="card-container">
                 <div
                     class="bg-white m-2 rounded h-96 flex justify-center items-center flex-col p-5 text-center shadow-xl card">
@@ -29,14 +31,14 @@
                 </div>
             </div>
             <div class="flex justify-around mt-6">
-    
+
                 <button type="button" id="prev-card">
                     <i class="arrow fas fa-angle-left fa-4x"></i>
                 </button>
                 <button type="button"
                     class="flip-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Flip
                     Card</button>
-                <button type="button"
+                <button type="button" id="category-modal-btn"
                     class="md:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Categories</button>
                 <button type="button" id="next-card">
@@ -49,7 +51,8 @@
             <div class="bg-white rounded shadow-xl p-2">
                 <h2 class="text-2xl text-center border-b p-2 font-medium">Overview</h2>
                 <div class=" p-4 overflow-auto">
-                    <p class="overview-content">At the heart of every website is **HTML**, or **Hypertext Markup Language**. As the standard
+                    <p class="overview-content">At the heart of every website is **HTML**, or **Hypertext Markup
+                        Language**. As the standard
                         language used to build the structure of a webpage, HTML allows us to define elements like
                         paragraphs, images, links, forms, and more.
 
@@ -66,4 +69,37 @@
             </div>
         </div>
     </div>
+    <div class="hidden self-center overflow-x-hidden overflow-y-auto fixed top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center h-modal sm:h-full max-h-screen"
+        id="description-modal">
+        <div class="relative w-full max-w-lg px-4 h-full md:h-auto">
+            <!-- Modal content -->
+            <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-gray-900 text-center text-xl font-medium dark:text-white">
+                        Overview
+                    </h3>
+                    <button type="button" id="modal-close"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-toggle="default-modal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p id = "modal-text" class="text-gray-500 text-base leading-relaxed dark:text-gray-400">
+                        With less than a month to go before the European Union enacts new consumer privacy laws for its
+                        citizens, companies around the world are updating their terms of service agreements to comply.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
