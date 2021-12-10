@@ -25,6 +25,22 @@ const oopCardData = [
     question: '"this" in classes refers to?',
     answer: 'a new object'
   },
+  {
+    question: 'What are the main features of OOPs?',
+    answer: 'a new objectInheritance, Encapsulation, Polymorphism, Data Abstraction'
+  },
+  {
+    question: 'What is Polymorphism?',
+    answer: 'Polymorphism refers to something that has many shapes. In OOPs, Polymorphism refers to the process by which some code, data, method, or object behaves differently under different circumstances or contexts'
+  },
+  {
+    question: 'What is meant by Inheritance?',
+    answer: '“inheritance” means “receiving some quality or behavior from a parent to an offspring.” In object-oriented programming, inheritance is the mechanism by which an object or class (referred to as a child) is created using the definition of another object or class (referred to as a parent).'
+  },
+  {
+    question: 'What is a constructor?',
+    answer: 'Constructors are special methods whose name is the same as the class name. The constructors serve the special purpose of initializing the objects.'
+  },
 ];
 
 const seedOopCards = () => Card.bulkCreate(oopCardData);
