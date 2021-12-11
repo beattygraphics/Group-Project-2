@@ -139,19 +139,19 @@ const cardCategoryData = [
   },
   {
     card_id: 35,
-    category_id: 7
+    category_id: 8
   },
   {
     card_id: 36,
-    category_id: 7
+    category_id: 8
   },
   {
     card_id: 37,
-    category_id: 7
+    category_id: 8
   },
   {
     card_id: 38,
-    category_id: 7
+    category_id: 8
   },
   {
     card_id: 39,
@@ -159,19 +159,19 @@ const cardCategoryData = [
   },
   {
     card_id: 40,
-    category_id: 8
+    category_id: 9
   },
   {
     card_id: 41,
-    category_id: 8
+    category_id: 9
   },
   {
     card_id: 42,
-    category_id: 8
+    category_id: 9
   },
   {
     card_id: 43,
-    category_id: 8
+    category_id: 9
   },
   {
     card_id: 44,
@@ -179,19 +179,19 @@ const cardCategoryData = [
   },
   {
     card_id: 45,
-    category_id: 8
+    category_id: 10
   },
   {
     card_id: 46,
-    category_id: 8
+    category_id: 10
   },
   {
     card_id: 47,
-    category_id: 8
+    category_id: 10
   },
   {
     card_id: 48,
-    category_id: 8
+    category_id: 10
   },
   {
     card_id: 49,
@@ -216,27 +216,7 @@ const cardCategoryData = [
   {
     card_id: 54,
     category_id: 10
-  },
-  {
-    card_id: 55,
-    category_id: 10
-  },
-  {
-    card_id: 56,
-    category_id: 10
-  },
-  {
-    card_id: 57,
-    category_id: 10
-  },
-  {
-    card_id: 58,
-    category_id: 10
-  },
-  {
-    card_id: 59,
-    category_id: 10
-  },
+  }
 ];
 
 const seedCardCategory = () => CardCategory.bulkCreate(cardCategoryData);

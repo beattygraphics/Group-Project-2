@@ -40,7 +40,7 @@ const oopCardData = [
   {
     question: 'What is a constructor?',
     answer: 'Constructors are special methods whose name is the same as the class name. The constructors serve the special purpose of initializing the objects.'
-  },
+  }
 ];
 
 const seedOopCards = () => Card.bulkCreate(oopCardData);

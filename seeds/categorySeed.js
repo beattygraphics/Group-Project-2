@@ -3,17 +3,15 @@ const { Category } = require('../models');
 const categoryData = [
   {
     name: 'CSS',
-    description: `CSS: Cascading Style Sheets
-    Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+    description: `Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
     
     CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.
     
     From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification.`
   },
   {
-    name: 'EXPRESS',
-    description: `Introducing Express
-    Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks. It provides mechanisms to:
+    name: 'Express.js',
+    description: `Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks. It provides mechanisms to:
     
     Write handlers for requests with different HTTP verbs at different URL paths (routes).
     Integrate with "view" rendering engines in order to generate responses by inserting data into templates.
@@ -25,8 +23,7 @@ const categoryData = [
   },
   {
     name: 'HTML',
-    description: `HTML: HyperText Markup Language
-    HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+    description: `HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
     
     "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
     
@@ -36,8 +33,7 @@ const categoryData = [
   },
   {
     name: 'MVC',
-    description: `MVC
-    MVC (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software’s business logic and display. This "separation of concerns" provides for a better division of labor and improved maintenance. Some other design patterns are based on MVC, such as MVVM (Model-View-Viewmodel), MVP (Model-View-Presenter), and MVW (Model-View-Whatever).
+    description: `MVC (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software’s business logic and display. This "separation of concerns" provides for a better division of labor and improved maintenance. Some other design patterns are based on MVC, such as MVVM (Model-View-Viewmodel), MVP (Model-View-Presenter), and MVW (Model-View-Whatever).
     
     The three parts of the MVC software-design pattern can be described as follows:
     
@@ -57,7 +53,7 @@ const categoryData = [
     You might however also want to just update the view to display the data in a different format, e.g., change the item order to alphabetical, or lowest to highest price. In this case the controller could handle this directly without needing to update the model.`
   },
   {
-    name: 'NODE',
+    name: 'Node.js',
     description: `Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm,[6] unifying web-application development around a single programming language, rather than different languages for server-side and client-side scripts.
 
     Though .js is the standard filename extension for JavaScript code, the name "Node.js" does not refer to a particular file in this context and is merely the name of the product. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).[7]
@@ -78,8 +74,7 @@ const categoryData = [
   },
   {
     name: 'API',
-    description: `API
-    An API (Application Programming Interface) is a set of features and rules that exist inside a software program (the application) enabling interaction with it through software - as opposed to a human user interface. The API can be seen as a simple contract (the interface) between the application offering it and other items, such as third party software or hardware.
+    description: `An API (Application Programming Interface) is a set of features and rules that exist inside a software program (the application) enabling interaction with it through software - as opposed to a human user interface. The API can be seen as a simple contract (the interface) between the application offering it and other items, such as third party software or hardware.
     
     In Web development, an API is generally a set of code features (e.g. methods, properties, events, and URLs) that a developer can use in their apps for interacting with components of a user's web browser, or other software/hardware on the user's computer, or third party websites and services.
     
@@ -91,9 +86,8 @@ const categoryData = [
     The Web Animations API can be used to animate parts of a web page — for example, to make images move around or rotate.`
   },
   {
-    name: 'JAVASCRIPT',
-    description: `JavaScript
-    JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
+    name: 'JavaScript',
+    description: `JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
     
     This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about API specifics to Web pages, please see Web APIs and DOM.
     
@@ -103,17 +97,13 @@ const categoryData = [
   },
   {
     name: 'ORM',
-    description: `Object-Relational Mapping (ORM)
-    Overview:
-    A database is essential to any application that collects data. Larger applications typically collect more data—making data management more complex. For example, we might have to compare data across databases, migrate an app's existing database, or even use various types of databases. Object-relational mapping (ORM) makes these tasks more manageable by helping us to interact with databases using JavaScript.
+    description: `A database is essential to any application that collects data. Larger applications typically collect more data—making data management more complex. For example, we might have to compare data across databases, migrate an app's existing database, or even use various types of databases. Object-relational mapping (ORM) makes these tasks more manageable by helping us to interact with databases using JavaScript.
     
     We can choose from many ORM tools, but for this unit we will use Sequelize. A popular JavaScript ORM that uses object-oriented programming, Sequelize enables us to communicate with Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server using Node.js. It also helps make relationships between the data easier to recognize and leverage. Thus, we can see how the data interacts much better than we could with plain SQL.`
   },
   {
     name: 'OOP',
-    description: `Object-Oriented Programming (OOP)
-    Overview
-    In this unit, we'll discuss object-oriented programming in JavaScript as we learn about constructors and the prototype chain. Constructors are special functions that help us create objects of similar types. Prototypes are JavaScript’s built-in system that allows objects to inherit features from other objects. Additionally, we'll explore Promises and learn how to take full advantage of them.
+    description: `In this unit, we'll discuss object-oriented programming in JavaScript as we learn about constructors and the prototype chain. Constructors are special functions that help us create objects of similar types. Prototypes are JavaScript’s built-in system that allows objects to inherit features from other objects. Additionally, we'll explore Promises and learn how to take full advantage of them.
     
     On the Job: Prototypes are generally considered an advanced JavaScript concept. Mastering this concept will make you a more competitive JavaScript developer!
     

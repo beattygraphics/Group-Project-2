@@ -46,11 +46,11 @@ const seedAll = async () => {
   await seedJavascript();
   console.log('\n----- JAVASCRIPT SEEDED -----\n');
 
-  await seedOop();
-  console.log('\n----- OOP SEEDED -----\n');
-
   await seedOrm();
   console.log('\n----- ORM SEEDED -----\n');
+  
+  await seedOop();
+  console.log('\n----- OOP SEEDED -----\n');
 
   await seedCardCategory();
   console.log('\n----- CARD CATEGORY SEEDED -----\n');
