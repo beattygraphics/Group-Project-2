@@ -28,6 +28,10 @@
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
     "sequelize": "^6.3.5"
+  },
+  "engines": {
+    "node": "v14.18.1"
   }
 }
