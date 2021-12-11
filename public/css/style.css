@@ -76,6 +76,10 @@ strong {
   width: 100% !important;
 }
 
+#logo {
+  max-width: 12rem;
+}
+
 
 .navbar{
  background-color: #3b5998;
