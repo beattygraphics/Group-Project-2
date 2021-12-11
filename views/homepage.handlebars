@@ -3,6 +3,10 @@
     <div
         class="container flex justify-center rounded bg-gray-100 mx-auto block sm:grid md:grid-cols-12  gap-4 py-10 px-6 ">
         <!-- CATEGORY COLUMN 1 OF 3 -->
+        <div class="category-nav">
+            <button class="cat-btn-close">&times;</button>
+            {{> categories}}
+        </div>
         <div class="hidden md:grid md:col-span-4 lg:col-span-3 max-h-48">
             <div
                 class="bg-white rounded border border-gray-200 shadow-xl text-sm font-medium dark:bg-gray-700 dark:border-gray-600 dark:text-white">
@@ -12,10 +16,15 @@
         </div>
         <!-- FLASCARD COLUMN 2 OF 3-->
         <div class="md:col-span-8 lg:col-span-6 rounded">
-            <h3 class="text-2xl font-normal text-gray-700 ml-2">Card
-                <span id="card-number">1</span> of
-                <span id="category-length">5
-            </h3>
+            <div class="flex justify-between">
+                <h3 class="text-2xl font-normal text-gray-700 ml-2">Card
+                    <span id="card-number">1</span> of
+                    <span id="category-length">5
+                </h3>
+                <button type="button" id="category-modal-btn"
+                    class="md:hidden mr-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Overview</button>
+            </div>
             <div class="card-container">
                 <div
                     class="bg-white m-2 rounded h-96 flex justify-center items-center flex-col p-5 text-center shadow-xl card">
@@ -38,7 +47,7 @@
                 <button type="button"
                     class="flip-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Flip
                     Card</button>
-                <button type="button" id="category-modal-btn"
+                <button type="button" id="category-nav-btn"
                     class="md:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Categories</button>
                 <button type="button" id="next-card">
@@ -91,7 +100,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
-                    <p id = "modal-text" class="text-gray-500 text-base leading-relaxed dark:text-gray-400">
+                    <p id="modal-text" class="text-gray-500 text-base leading-relaxed dark:text-gray-400">
                         With less than a month to go before the European Union enacts new consumer privacy laws for its
                         citizens, companies around the world are updating their terms of service agreements to comply.
                     </p>

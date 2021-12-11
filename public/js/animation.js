@@ -1,12 +1,21 @@
-var card = document.querySelector(".card");     
-var playing = false;
-var flipBtn = document.querySelector(".flip-btn");  
+const card = document.querySelector(".card");     
+let playing = false;
+const flipBtn = document.querySelector(".flip-btn");
 
-var star = document.querySelector(".star")
-var favorited = false;
+const mobileNav = document.querySelector(".side-nav");
+const mobileNavCloseBtn = document.querySelector(".btn-close");
+const hamburgerMenu = document.querySelector('#hamburger');
 
-var modalBtn = document.querySelector("#category-modal-btn");
-var modalBtnClose = document.querySelector('#modal-close');
+const categoryMobile = document.querySelector(".category-nav");
+const categoryMobileCloseBtn = document.querySelector(".cat-btn-close");
+const categoryMobileOpenBtn = document.querySelector("#category-nav-btn");
+  
+
+const star = document.querySelector(".star")
+let favorited = false;
+
+const modalBtn = document.querySelector("#category-modal-btn");
+const modalBtnClose = document.querySelector('#modal-close');
 
 function favoriteCard() {
   if(star.innerHTML = `<i class="far fa-star fa-2x"></i>`) {
@@ -54,7 +63,26 @@ function toggleModal () {
   document.querySelector("#description-modal").classList.toggle('hidden');
 }
 
+function toggleMobileNavOpen() {
+  mobileNav.style.width = "100%";
+}
 
+function toggleMobileNavClose() {
+  mobileNav.style.width = "0";
+}
+
+function toggleMobileCatOpen() {
+  categoryMobile.style.width = "100%";
+}
+
+function toggleMobileCatClose() {
+  categoryMobile.style.width = "0";
+}
+
+mobileNavCloseBtn.addEventListener("click", toggleMobileNavClose);
+hamburgerMenu.addEventListener("click", toggleMobileNavOpen);
+categoryMobileOpenBtn.addEventListener("click", toggleMobileCatOpen);
+categoryMobileCloseBtn.addEventListener("click", toggleMobileCatClose);
 modalBtn.addEventListener("click", toggleModal);
 modalBtnClose.addEventListener("click", toggleModal);
 flipBtn.addEventListener("click", cardFlip);
