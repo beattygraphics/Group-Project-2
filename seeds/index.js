@@ -9,7 +9,7 @@ const seedApi = require('./apiSeed');
 const seedJavascript = require('./javascriptSeed');
 const seedOop = require('./oopSeed');
 const seedOrm = require('./ormSeed');
-const seedCardCategory = require('./cardCategorySeed');
+const seedCardCategory = require('./cardcategorySeed');
 const seedUser = require('./userSeed');
 
 
