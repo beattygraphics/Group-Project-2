@@ -17,7 +17,7 @@ Card.init(
             primaryKey: false,
         },
         answer: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
             primaryKey: false,
         },
