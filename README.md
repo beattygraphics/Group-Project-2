@@ -61,6 +61,5 @@
   
   Jacob McCarthy - thejacobmccarthy@gmail.com
   Josh Elrod - elrodjosh96@gmail.com
-
-
+  Omar Pacheco - omarspacheco@gmail.com
 
