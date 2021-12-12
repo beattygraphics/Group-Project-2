@@ -60,6 +60,7 @@
   Have any questions? Feel free to reach out to us!
   
   Jacob McCarthy - thejacobmccarthy@gmail.com
+  Josh Elrod - elrodjosh96@gmail.com
 
 
 
