@@ -105,10 +105,10 @@ const handleLogout = async (event) => {
 
 
 // event listeners
-logoutBtn.addEventListener('click', handleLogout);
-nextCardBtn.addEventListener('click', nextCard);
-prevCardBtn.addEventListener('click', prevCard);
-
-
 getCardsFromCategory();
 fetchCategoryInfo(currentCategory);
+
+nextCardBtn.addEventListener('click', nextCard);
+prevCardBtn.addEventListener('click', prevCard);
+logoutBtn.addEventListener('click', handleLogout);
+
