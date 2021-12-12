@@ -216,6 +216,10 @@ const cardCategoryData = [
   {
     card_id: 54,
     category_id: 10
+<<<<<<< HEAD
+=======
+
+>>>>>>> c6f744201826381746d77cbd06b33c2e5682e314
   }
 ];
 
