@@ -79,11 +79,17 @@ function toggleMobileCatClose() {
   categoryMobile.style.width = "0";
 }
 
-mobileNavCloseBtn.addEventListener("click", toggleMobileNavClose);
-hamburgerMenu.addEventListener("click", toggleMobileNavOpen);
-categoryMobileOpenBtn.addEventListener("click", toggleMobileCatOpen);
-categoryMobileCloseBtn.addEventListener("click", toggleMobileCatClose);
-modalBtn.addEventListener("click", toggleModal);
-modalBtnClose.addEventListener("click", toggleModal);
-flipBtn.addEventListener("click", cardFlip);
-star.addEventListener("click", favoriteCard);
+function nullCheckEventListener(element, action, funct) {
+  if (element) {
+    element.addEventListener(action, funct);
+  }
+}
+
+nullCheckEventListener(mobileNavCloseBtn, "click", toggleMobileNavClose);
+nullCheckEventListener(hamburgerMenu, "click", toggleMobileNavOpen);
+nullCheckEventListener(categoryMobileOpenBtn, "click", toggleMobileCatOpen);
+nullCheckEventListener(categoryMobileCloseBtn, "click", toggleMobileCatClose);
+nullCheckEventListener(modalBtn, "click", toggleModal);
+nullCheckEventListener(modalBtnClose, "click", toggleModal);
+nullCheckEventListener(flipBtn, "click", cardFlip);
+nullCheckEventListener(star, "click", favoriteCard);

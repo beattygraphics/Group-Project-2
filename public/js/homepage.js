@@ -14,7 +14,7 @@ const cardNumber = document.querySelector('#card-number');
 const categoryLength = document.querySelector('#category-length');
 
 
-let currentCategory = 1;
+let currentCategory = categoryBtns.length ? 1 : null;
 let currentCards = [];
 let currentCardIndex = 0;
 
@@ -83,10 +83,6 @@ function prevCard() {
   }
 }
 
-
-
-
-
 // logout functionality 
 const handleLogout = async (event) => {
   event.preventDefault();
@@ -103,12 +99,19 @@ const handleLogout = async (event) => {
   }
 };
 
+function nullCheckEventListener(element, action, funct) {
+  if (element) {
+    element.addEventListener(action, funct);
+  }
+}
+
 
 // event listeners
 getCardsFromCategory();
-fetchCategoryInfo(currentCategory);
+if (categoryBtns.length) {
+  fetchCategoryInfo(currentCategory);
+}
 
-nextCardBtn.addEventListener('click', nextCard);
-prevCardBtn.addEventListener('click', prevCard);
-logoutBtn.addEventListener('click', handleLogout);
-
+nullCheckEventListener(nextCardBtn, 'click', nextCard);
+nullCheckEventListener(prevCardBtn, 'click', prevCard);
+nullCheckEventListener(logoutBtn, 'click', handleLogout);
